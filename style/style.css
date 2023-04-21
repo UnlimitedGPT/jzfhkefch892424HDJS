@@ -20,7 +20,7 @@ body {
   
 
   }
-  .left-ad {
+  .left-am {
     width: 15%;
     height: 100vh;
     position: absolute;
@@ -34,7 +34,7 @@ body {
     right: 0;
   }
 
-  .left-ad {
+  .left-am {
     width: 100%;
     position: absolute;
     flex-direction: column;
@@ -48,7 +48,7 @@ body {
     flex-direction: row;
   }
   
-  .left-ad a {
+  .left-am a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -56,12 +56,12 @@ body {
     font-weight: bold;
   }
   
-  .left-ad a:hover {
+  .left-am a:hover {
     background-color: #ddd;
     color: #000;
   }
   
-  .left-ad {
+  .left-am {
     display: flex;
     align-items: center;
   }
