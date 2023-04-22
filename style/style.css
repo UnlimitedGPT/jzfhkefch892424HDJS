@@ -69,4 +69,17 @@ body {
     top: 0px;
     position: absolute;
     width: 3.1in;
-   }
+}
+
+  .coffee {
+    color: #ffffff;
+    position: absolute;
+    font-size: 1.7em;
+    margin: 16px;
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    word-spacing: 2px;
+  
+  }
