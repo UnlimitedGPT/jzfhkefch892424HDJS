@@ -39,7 +39,7 @@ body {
   position: absolute;
   flex-direction: column;
   justify-content: flex-end;
-  bottom: 5px;
+  bottom: 0;
   height: fit-content;
   }
   
@@ -228,6 +228,7 @@ and (orientation: portrait){
           justify-content: flex-end;
           height: fit-content;
           zoom: 150%;
+          bottom: 0;
 
           }
 
