@@ -23,7 +23,7 @@ body {
   .left-am {
   width: 15%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   left: 0;
   }
   .right-ad {
@@ -36,7 +36,7 @@ body {
   
   .left-am {
   width: 100%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   justify-content: flex-end;
   bottom: 0;
@@ -155,13 +155,13 @@ body {
   .left-am {
           width: 15%;
           height: 100vh;
-          position: fixed;
+          position: absolute;
           left: 0;
           }
           
   .left-am {
           width: 100%;
-          position: fixed;
+          position: absolute;
           flex-direction: column;
           justify-content: flex-end;
           height: fit-content;
@@ -239,13 +239,13 @@ and (orientation: portrait){
   .left-am {
           width: 15%;
           height: 100vh;
-          position: fixed;
+          position: absolute;
           left: 0;
           }
           
   .left-am {
           width: 100%;
-          position: fixed;
+          position: absolute;
           flex-direction: column;
           justify-content: flex-end;
           height: fit-content;
@@ -272,7 +272,7 @@ and (orientation: portrait){
 
 .left-am {
   width: 100%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   justify-content: flex-end;
   height: fit-content;
@@ -300,7 +300,7 @@ and (orientation: portrait){
 
 .left-am {
   width: 100%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   justify-content: flex-end;
   height: fit-content;
@@ -325,7 +325,7 @@ and (orientation: portrait){
 
 .left-am {
   width: 100%;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   justify-content: flex-end;
   height: fit-content;
