@@ -3,7 +3,7 @@ const statusMessage = document.getElementById("status-message");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(form);
-  fetch("https://formsubmit.co/ajax/unlimitedgpt@gmail.com", {
+  fetch("https://formsubmit.co/ajax/contact@unlimitedgpt.co", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
       name: formData.get("name"),
       email: formData.get("email"),
       message: formData.get("message"),
-      _replyto: "unlimitedgpt@gmail.com",
+      _replyto: "contact@unlimitedgpt.co",
     }),
   })
     .then((response) => {
