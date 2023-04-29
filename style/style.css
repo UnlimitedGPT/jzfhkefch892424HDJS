@@ -75,6 +75,7 @@ body {
   top: 0px;
   position: absolute;
   width: 3.1in;
+  z-index: 4;
   }
   
   .coffee {
@@ -87,6 +88,7 @@ body {
   align-items: center;
   font-family: 'Roboto Mono', monospace;
   word-spacing: 2px;
+  z-index: 3;
   
   }
   
@@ -97,7 +99,44 @@ body {
   justify-content: center;
   margin-top: 50px;
   }
+
+  .futurepedia {
+
+    bottom: 0;
+    position: fixed;
+    margin: 16px;
+    z-index: 4;
+    zoom: 74%;
+
+
+  }
   
+  .futurepedia-text {
+
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 60px;
+    margin-left: 17px;
+    font-size: 16px;
+    color: white;
+    font-family: cursive, Arial, sans-serif;
+    z-index: 4;
+
+
+  }
+
+  .futurepedia-text span {
+    color: rgb(255 33 33);
+  }
+
+  /* .futurepedia, .futurepedia-text {
+
+    display: none;
+
+  } */
+
+
+
 
 
 /* Media queries for smaller screen sizes */
@@ -135,6 +174,7 @@ body {
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     word-spacing: 2px;
+    z-index: 3;
     
     }
 
@@ -147,7 +187,6 @@ body {
   .frame-div {
     height: 90%;
     width: 75%;
-    margin-top: 5vw;
     align-items: center;
   }
   .left-am a {
@@ -188,8 +227,15 @@ body {
 
           }
 
+  .futurepedia, .futurepedia-text {
+
+    display: none;
+
+  }
+
 
 }
+
 
 
 /* Media queries for even smaller screen sizes */
@@ -213,6 +259,7 @@ and (orientation: portrait){
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     word-spacing: 2px;
+    z-index: 3;
     
     }
 
@@ -223,7 +270,6 @@ and (orientation: portrait){
 
 
   .frame-div {
-    margin-top: 5vw;
     zoom: 144%;
     align-items: center;
   }
@@ -242,6 +288,8 @@ and (orientation: portrait){
     top: 0px;
     position: absolute;
     width: 3.5in;
+    z-index: 4;
+
       }
 
 
@@ -283,6 +331,11 @@ and (orientation: portrait){
 
           }
 
+  .futurepedia, .futurepedia-text {
+
+    display: none;
+
+          }   
 
   
 }
@@ -303,7 +356,7 @@ and (orientation: portrait){
 }
 
 
-.left-am {
+  .left-am {
   width: 100%;
   position: fixed;
   flex-direction: column;
@@ -312,6 +365,12 @@ and (orientation: portrait){
   zoom: 115%;
   bottom: 0;
 
+
+  }
+
+  .futurepedia, .futurepedia-text {
+
+    display: none;
 
   }
 
@@ -348,6 +407,15 @@ and (orientation: portrait){
 
 
   }
+
+
+
+.futurepedia, .futurepedia-text {
+
+    display: none;
+
+  }
+
 }
 
 
@@ -377,12 +445,12 @@ and (orientation: portrait){
 
 
   }
+
+
+.futurepedia, .futurepedia-text {
+
+    display: none;
+
+  }
+
 }
-
-
-
-
-
-
-
-
