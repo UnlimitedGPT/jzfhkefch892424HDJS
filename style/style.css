@@ -115,7 +115,7 @@ body {
 
     bottom: 0;
     position: fixed;
-    margin-bottom: 60px;
+    margin-bottom: 110px;
     margin-left: 17px;
     font-size: 16px;
     color: white;
@@ -129,13 +129,17 @@ body {
     color: rgb(255 33 33);
   }
 
-  /* .futurepedia, .futurepedia-text {
+  .producthunt {
 
-    display: none;
+    bottom: 0;
+    position: fixed;
+    margin: 16px;
+    z-index: 4;
+    zoom: 74%;
+    margin-bottom: 80px;
 
-  } */
 
-
+  }
 
 
 
@@ -227,7 +231,7 @@ body {
 
           }
 
-  .futurepedia, .futurepedia-text {
+  .futurepedia, .futurepedia-text, .producthunt {
 
     display: none;
 
@@ -331,11 +335,11 @@ and (orientation: portrait){
 
           }
 
-  .futurepedia, .futurepedia-text {
+  .futurepedia, .futurepedia-text, .producthunt {
 
     display: none;
 
-          }   
+  } 
 
   
 }
@@ -368,7 +372,7 @@ and (orientation: portrait){
 
   }
 
-  .futurepedia, .futurepedia-text {
+  .futurepedia, .futurepedia-text, .producthunt {
 
     display: none;
 
@@ -410,7 +414,7 @@ and (orientation: portrait){
 
 
 
-.futurepedia, .futurepedia-text {
+  .futurepedia, .futurepedia-text, .producthunt {
 
     display: none;
 
@@ -447,7 +451,7 @@ and (orientation: portrait){
   }
 
 
-.futurepedia, .futurepedia-text {
+.futurepedia, .futurepedia-text, .producthunt {
 
     display: none;
 
