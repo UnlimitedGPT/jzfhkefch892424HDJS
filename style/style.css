@@ -136,6 +136,12 @@ body {
 
   }
 
+  .futurepedia, .futurepedia-text, .producthunt {
+
+    display: none;
+
+  }
+
 
 
 /* Media queries for smaller screen sizes */
