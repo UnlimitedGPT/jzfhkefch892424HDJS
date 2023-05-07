@@ -1,13 +1,17 @@
 input, textarea, select {
-  font-size: 16px;
+  font-size: 18px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 
 
 body {
   margin: 0px;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #000313;
+
   }
   .container {
   display: flex;
@@ -24,14 +28,8 @@ body {
   z-index: 2;
   
   }
-  .left-am {
-  width: 15%;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  z-index: 1;
 
-  }
+
   .right-ad {
   width: 15%;
   height: 100vh;
@@ -40,107 +38,184 @@ body {
   right: 0;
   }
   
-  .left-am {
-  width: 100%;
-  position: fixed;
-  flex-direction: column;
-  justify-content: flex-end;
-  bottom: 0;
-  height: fit-content;
-  }
+
   
   .links-container {
   display: flex;
   flex-direction: row;
   }
   
-  .left-am a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #626262;
-  font-weight: bold;
-  }
-  
-  .left-am a:hover {
-  background-color: #ddd;
-  color: #000;
-  }
-  
-  .left-am {
-  display: flex;
-  align-items: center;
-  }
+
   .logo {
   top: 0px;
   position: absolute;
   width: 3.1in;
   z-index: 4;
   }
+
+
   
-  .coffee {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  z-index: 3;
-  margin: 20px;
-  
-  }
+
   
   .frame-div {
-  height: 86%;
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  }
-
-  .futurepedia {
-
-    bottom: 0;
-    position: fixed;
-    margin: 16px;
-    z-index: 4;
-    zoom: 74%;
+    height: 88vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    }
 
 
+  .container-1 {
+    display: flex;
+    justify-content: center;
+  
+  
   }
   
-  .futurepedia-text {
+  
+*, *:before, *:after 
+{ box-sizing: border-box; }
 
-    bottom: 0;
-    position: fixed;
-    margin-bottom: 110px;
-    margin-left: 17px;
-    font-size: 16px;
-    color: white;
-    font-family: cursive, Arial, sans-serif;
-    z-index: 4;
+html { font-size: 18px; }
+
+body {
+  color: #e0e4cc;
+  font-size: 1.2em;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+label .menu {
+  position: fixed;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #FFF;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+  
+}
 
 
-  }
 
-  .futurepedia-text span {
-    color: rgb(255 33 33);
-  }
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000000;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
 
-  .producthunt {
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
 
-    bottom: 0;
-    position: fixed;
-    margin: 16px;
-    z-index: 4;
-    zoom: 74%;
-    margin-bottom: 80px;
+label .hamburger:before { top: -10px; }
 
+label .hamburger:after { bottom: -10px; }
 
-  }
+label input { display: none; }
 
-  .futurepedia, .futurepedia-text, .producthunt {
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  border-radius: 0;
+  
+}
 
-    display: none;
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
 
-  }
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+  
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+  
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: flex;
+  color: #38454c;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  line-height: normal;
+  
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+label #menu-toggle { display: none; }
+
+/* label #menu-toggle:checked + .menu {
+
+} */
+
+label #menu-toggle:checked + .menu + ul { 
+  opacity: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 
 
 
@@ -167,76 +242,24 @@ body {
   }
 
 
-
-
-  .coffee {
-    top: 80px;
-    position: fixed;
-    z-index: 4;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    zoom: 85%;
-    margin: 0;
-    
-    }
-
-
   .right-ad {
     display: none;
     }
 
 
   .frame-div {
-    height: 90%;
     width: 75%;
     align-items: center;
   }
-  .left-am a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #626262;
-        font-weight: bold;
-        }
-        
-  .left-am a:hover {
-        background-color: #ddd;
-        color: #000;
-        }
-        
-  .left-am {
-        display: flex;
-        align-items: center;
-        }   
 
-
-  .left-am {
-          width: 15%;
-          height: 100vh;
-          position: fixed;
-          left: 0;
-          }
-          
-  .left-am {
-          width: 100%;
-          position: fixed;
-          flex-direction: column;
-          justify-content: flex-end;
-          height: fit-content;
-          bottom: -6px;
-          zoom: 200%;
-
-
-          }
-
-  .futurepedia, .futurepedia-text, .producthunt {
-
-    display: none;
-
+  label .menu {
+    zoom: 170%;
+    
   }
 
 
+
+        
 }
 
 
@@ -251,19 +274,6 @@ and (orientation: portrait){
   }
 
 
-  
-  .coffee {
-    top: 80px;
-    position: fixed;
-    z-index: 4;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    zoom: 145%;
-    margin: 0;
-    
-    }
-
 
   .right-ad {
     display: none;
@@ -271,8 +281,8 @@ and (orientation: portrait){
 
 
   .frame-div {
-    zoom: 144%;
     align-items: center;
+    margin-top: 12vh;
   }
 
 
@@ -290,55 +300,18 @@ and (orientation: portrait){
     position: absolute;
     width: 3.5in;
     z-index: 4;
+    zoom: 170%;
 
-      }
+    }
 
+    label .menu {
+      zoom: 185%;
+      
+    }
 
-  .left-am a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #626262;
-        font-weight: bold;
-        }
-        
-  .left-am a:hover {
-        background-color: #ddd;
-        color: #000;
-        }
-        
-  .left-am {
-        display: flex;
-        align-items: center;
-        }   
-
-
-  .left-am {
-          width: 15%;
-          height: 100vh;
-          position: fixed;
-          left: 0;
-          }
-          
-  .left-am {
-          width: 100%;
-          position: fixed;
-          flex-direction: column;
-          justify-content: flex-end;
-          height: fit-content;
-          zoom: 150%;
-          bottom: 0;
-
-
-          }
-
-  .futurepedia, .futurepedia-text, .producthunt {
-
-    display: none;
-
-  } 
-
-  
+    label ul {
+      zoom: 280%;
+    }
 }
 
 
@@ -356,27 +329,11 @@ and (orientation: portrait){
     height: 72%;
 }
 
-
-  .left-am {
-  width: 100%;
-  position: fixed;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: fit-content;
-  zoom: 115%;
-  bottom: 0;
-
-
-  }
-
-  .futurepedia, .futurepedia-text, .producthunt {
-
-    display: none;
-
-  }
-
-
+label .menu {
+  zoom: 185%;
   
+}
+
 
 
 }
@@ -396,26 +353,11 @@ and (orientation: portrait){
     height: 65%;
 }
 
+label .menu {
+  zoom: 100%;
+  
+}
 
-.left-am {
-  width: 100%;
-  position: fixed;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: fit-content;
-  zoom: 115%;
-  bottom: 0;
-
-
-  }
-
-
-
-  .futurepedia, .futurepedia-text, .producthunt {
-
-    display: none;
-
-  }
 
 }
 
@@ -434,24 +376,11 @@ and (orientation: portrait){
     height: 72%;
 }
 
-
-.left-am {
-  width: 100%;
-  position: fixed;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: fit-content;
-  zoom: 115%;
-  bottom: 0;
+label .menu {
+  zoom: 185%;
+  
+}
 
 
-  }
-
-
-.futurepedia, .futurepedia-text, .producthunt {
-
-    display: none;
-
-  }
 
 }
