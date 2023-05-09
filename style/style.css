@@ -217,6 +217,53 @@ label #menu-toggle:checked + .menu + ul {
 }
 
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 16px 10px 48px -17px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 16px 10px 48px -17px rgba(0,0,0,0.5);
+  -moz-box-shadow: 16px 10px 48px -17px rgba(0,0,0,0.5);
+  z-index: 10;
+  border-radius: 17px;
+}
+.popup h2 {
+  margin-top: 6px;
+  color: #ff6c6c;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 9px;
+}
+
+.popup p {
+  color: black;
+  display: inline;
+  font-family: fangsong;
+  font-size: large;
+
+}
+.close-btn {
+  position: absolute;
+  top: -8px;
+  right: 3px;
+  cursor: pointer;
+  color: #505050;
+  zoom: 210%;
+}
+
+
+
+
+
+
 
 
 /* Media queries for smaller screen sizes */
@@ -311,6 +358,10 @@ and (orientation: portrait){
 
     label ul {
       zoom: 280%;
+    }
+
+    .popup {
+      zoom: 180%;
     }
 }
 
