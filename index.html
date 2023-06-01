@@ -48,8 +48,6 @@
 
     <title>UnlimitedGPT - Use ChatGPT for free </title>
     <link rel="stylesheet" href="style/style.css" />
-
-    <script> configObj = {"text":"We have just launched StupidGPT.LOL It's funny check it out!","bannerURL":"https://stupidgpt.lol/","selectedBackgroundColor":"#ff7575","selectedTextColor":"#ffffff","bannerHeight":"48px","fontSize":"16px"};function createBanner(obj, pageSimulator) {        var swBannerLink = obj.bannerURL;        var swBannerTarget = "_blank";        var swBannerText = obj.text;        var body = document.body;        var swBanner = document.createElement('a');        var centerDiv = document.createElement('div');        var text = document.createElement('span');        swBanner.href = swBannerLink;        swBanner.target = swBannerTarget;        swBanner.style.display = "flex";        swBanner.style.justifyContent = "center";        swBanner.style.alignItems = "center";        swBanner.style.width = "100%";        swBanner.style.minHeight = "48px";        swBanner.style.maxHeight = "72px";        swBanner.style.paddingTop = "8px";        swBanner.style.paddingBottom = "8px";        swBanner.style.lineHeight = "18px";        swBanner.style.textAlign = "center";        swBanner.style.textDecoration = "none";        swBanner.style.height = obj.bannerHeight;        swBanner.style.fontSize = obj.fontSize;        text.innerHTML = swBannerText;        swBanner.style.backgroundColor = obj.selectedBackgroundColor;        swBanner.style.color = obj.selectedTextColor;        swBanner.id = 'sw-banner';        swBanner.classList.add('sw-banner');        centerDiv.classList.add('center');        centerDiv.append(text);        swBanner.append(centerDiv);        if(!pageSimulator) {          body.insertBefore(swBanner, body.firstChild);        } else {          pageSimulator.insertBefore(swBanner, pageSimulator.firstChild);        }    };document.addEventListener("DOMContentLoaded", function() { createBanner(configObj, null); });</script>
     
   </head>
   <body>
@@ -139,6 +137,26 @@
 
     </script>
 
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menu-toggle');
+      const menuList = document.getElementById('menu-list');
+
+      menuToggle.addEventListener('change', function() {
+        if (menuToggle.checked) {
+          menuList.style.pointerEvents = 'auto';
+        } else {
+          menuList.style.pointerEvents = 'none';
+        }
+      });
+
+      // Set initial state
+      menuList.style.pointerEvents = menuToggle.checked ? 'auto' : 'none';
+    });
+
+    </script>
+
+
 <!-- <div class="popup" id="popup"  >
   <h2>We Need Your Help!</h2>
   <p>Our website is offering ChatGPT for absolutely free, but we need your help to keep it that way. By spreading the word about us and sharing our website with your friends and on social media, you can help us continue our mission of democratizing AI-powered tools. So, let's come together and make Unlimited GPT accessible to everyone!</p>
@@ -158,7 +176,7 @@
   });
 </script> -->
 
-
+    <embed class="shop-css" src="https://unlimitedgpt.gumroad.com/" frameborder="0"></embed>
 
   </body>
 </html>
